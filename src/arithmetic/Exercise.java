@@ -40,12 +40,12 @@ public class Exercise {
 
         try {
             // 问题写入文件
-            File file = new File(System.getProperty("user.dir") + "/" + "Exercises" + ".txt");
+            File file = new File(System.getProperty("user.dir") + "/" + "Exercises_" + ".txt");
             PrintStream ps = new PrintStream(new FileOutputStream(file));
             ps.append(question);
 
             // 答案写入文件
-            file = new File(System.getProperty("user.dir") + "/" + "Answer" + ".txt");
+            file = new File(System.getProperty("user.dir") + "/" + "Answer_" + ".txt");
             ps = new PrintStream(new FileOutputStream(file));
             ps.append(answer);
         } catch (FileNotFoundException e) {
